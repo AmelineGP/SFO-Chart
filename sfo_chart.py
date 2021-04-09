@@ -28,6 +28,7 @@ def savegeojson(data, file_path):
 def writejson(data,file_path):
     str_data = open(file_path,'w')
     json.dump(data, str_data, indent=1)
+    writeLogs("data saved in: "+file_path+"\n")
     return
 
 def lookup(complex_element,key):
@@ -73,19 +74,10 @@ def extractFeatureAIXM(fxml,featureType): #return all the feature of this featur
     elements = findAllcheck(elementTree,'aixm-message:hasMember/aixm:'+featureType)
     return elements
 
-'''def addAirspaces(allAirspaces,airspacesToAdd,airspaceForChart,geojson):
-    if len(airspacesToAdd)==0:return #no Airspaces to be added to this chart
-    for airspace in allAirspaces:
-        id=lookup(airspace, 'identifier')#airspace uuid
-        allAirspacesTS=findAllcheck(airspace,'aixm:timeSlice/aixm:AirspaceTimeSlice')
-        for airspaceTS in allAirspacesTS:
-            designator=lookup(airspaceTS,'designator')#airspace code
-            type=lookup(airspaceTS,'type')#airspace Type
-            for airspaceToAdd in airspacesToAdd:
-                if airspaceToAdd['type']==type and airspaceToAdd['name'] in designator:
-                    airspaceForChart.append({"name":designator,"featureType":"airspace","type":type,'referencedoc':"Airspace_NoRefGeoborder.xml",'ref_uid':id})
-    return airspaceForChart'''
-
+def getcolor(elem,type): #only for airspaces, this function return the defined color that should be applied, or grey (#CBD2D0) if none
+    if elem.get('color')!=None:return elem.get('color')
+    if type in ['AIRSPACE','Airspace']: return '#CBD2D0'
+    return ''
 
 def getElement(feature,allElements,elementsToAdd,doc):
     if len(elementsToAdd)==0:return #no element to be added to this chart
@@ -99,22 +91,23 @@ def getElement(feature,allElements,elementsToAdd,doc):
             for elementToAdd in elementsToAdd:
                 if elementToAdd['type'] in type:
                     if isinstance(elementToAdd['name'],str) and elementToAdd['name'] in designator: #if only one string is defined, we check if the designator contain this string
-                        elementForChart.append({"name":designator,"featureType":feature,"type":type,'referencedoc':doc,'ref_uid':id})
-                    if isinstance(elementToAdd['name'],list) and designator in elementToAdd['name']: #if a lsite of name is defined, we check if the designator is part of this liste
-                        elementForChart.append({"name":designator,"featureType":feature,"type":type,'referencedoc':doc,'ref_uid':id})
-
+                        elementForChart.append({"name":designator,"featureType":feature,"type":type,'referencedoc':doc,'ref_uid':id,'color':getcolor(elementToAdd,feature)})
+                    if isinstance(elementToAdd['name'],list):
+                        for elem in elementToAdd['name']:
+                            if elem in designator: #if a liste of name is defined, we check if the designator contain any of this string
+                                elementForChart.append({"name":designator,"featureType":feature,"type":type,'referencedoc':doc,'ref_uid':id,'color':getcolor(elementToAdd,feature)})
+    writeLogs(str(len(elementForChart))+" elements of type "+feature+" added to "+args.sfolayer+".json")
     return elementForChart
 
-def getRoutesID(routes,routeNames):
+def getRoutesID(routes,routeNames):#return a dictionary with for each route id, a route name
     ids={}
-    for route in routes:
-        id=lookup(route, 'identifier')
-        allrouteTS=findAllcheck(route,'aixm:timeSlice/aixm:RouteTimeSlice')
-        for routeTS in allrouteTS:
-            for name in routeNames:
+    for name in routeNames:
+        for route in routes:
+            id=lookup(route, 'identifier')
+            allrouteTS=findAllcheck(route,'aixm:timeSlice/aixm:RouteTimeSlice')
+            for routeTS in allrouteTS:
                 if name == lookup(routeTS,'name'):
-                    ids[name]=id
-                continue
+                    ids[id]=name
     return ids
 
 def getPointRefID(segment,startorend):
@@ -134,11 +127,11 @@ def getSegmentRefRoute(segmentsxml,routeIDs):
         allsegmentTS=findAllcheck(segment,'aixm:timeSlice/aixm:RouteSegmentTimeSlice')
         for segmentTS in allsegmentTS:
             routeref=lookupattrib(segmentTS,'routeFormed',"href")
-            for route in routeIDs:
-                if routeIDs[route] in routeref: #this route segment belong to a route that we need to include in the chart
+            for routeid in routeIDs:
+                if routeid in routeref: #this route segment belong to a route that we need to include in the chart
                     startpoint=getPointRefID(segmentTS,"start")#ID of the designated point starting the segment
                     endpoint=getPointRefID(segmentTS,"end")#ID of the designated point ending the segment
-                    segmentsforchart.append({'id':id,'route name':route,'refstart':startpoint,'refend':endpoint})
+                    segmentsforchart.append({'id':id,'route name':routeIDs[routeid],'refstart':startpoint,'refend':endpoint})
                 continue
     return segmentsforchart
 
@@ -154,7 +147,7 @@ def getPointName(point,pointsxml,navaidsxml):
     return lookup(pointTS,'designator')
 
 def addSegment(elementForChart,segment,startname,endname,docSegment,docPoint):
-    segmentname=segment['route name']+' ('+startname+' - '+endname+' )'
+    segmentname=segment['route name']+' ('+startname+' - '+endname+')'
     startend=[{'name':startname,'featureType':segment['refstart']['type'],'referencedoc':docPoint,'ref_uid':segment['refstart']['id']},{'name':endname,'featureType':segment['refend']['type'],'referencedoc':docPoint,'ref_uid':segment['refend']['id']}]
     elementForChart.append({"name":segmentname,"featureType":'RouteSegment','referencedoc':docSegment,'ref_uid':segment['id'],"Points":startend})
     return elementForChart
@@ -169,11 +162,13 @@ def getRouteSegment(routesxml,routesegmentsxml,pointsxml,navaidsxml,routetoadd,d
         startname=getPointName(segment['refstart'],pointsxml,navaidsxml)
         endname=getPointName(segment['refend'],pointsxml,navaidsxml)
         elementForChart=addSegment(elementForChart,segment,startname,endname,docSegment,docPoint)
+    writeLogs(str(len(elementForChart))+" elements of type route segment added to "+args.sfolayer+".json")
 
 
     return elementForChart
 
 def chartDefinition(airspaces,navaids,points,routesegments,routes,chartIn,chartConf):
+    writeLogs("starting to collect the element to add to the .json for: "+chartIn['NAME'])
     airspaceForChart=getElement("Airspace",airspaces,chartIn['AIRSPACE'],'Airspace_NoRefGeoborder.xml')
     navaidForChart=getElement("Navaid",navaids,chartIn['NAVAID'],'DesignatedPoint_Navaid.xml')
     designatedPointForChart=getElement("DesignatedPoint",points,chartIn['POINT'],'DesignatedPoint_Navaid.xml')
@@ -181,7 +176,7 @@ def chartDefinition(airspaces,navaids,points,routesegments,routes,chartIn,chartC
 
 
     elements=airspaceForChart+navaidForChart+designatedPointForChart+routesegmentForChart#list of elements contained in chartConf
-    chartConf["Global Layers"].append({"chartname":chartIn['NAME'], "elements":elements})
+    chartConf["sfo Layers"].append({"chartname":chartIn['NAME'], "elements":elements})
     return
 
 def readGeojson(fgeojson):
@@ -197,11 +192,12 @@ def getFeatureType(geojsontype):#the type is indicated in the Type data as ""<fe
     return type
 
 def getFeatureSubType(geojsonfc):
-    #the subtype is the last string indicated into ()
+    #the subtype is the last string,some time indicated into ()
     try:
         fc=geojsonfc.split(' ')
         subtype=str(fc[len(fc)-1])
-        subtype=subtype[1:-1]
+        if subtype[0]=="(":subtype=subtype[1:] #remove the () if any
+        if subtype[-1]==")":subtype=subtype[:-1]
     except:
         writeLogs("Can't find subtype in: "+ geojsonfc)
         return ''
@@ -217,19 +213,22 @@ def getFeatureName(geojsonfc):
         return '',''
     return name
 
-def insertGeojson(out,geometry, type,subtype,name,id):
-    properties=[{"uid":id,"feature type":type,"type":subtype,"name":name}]
+def insertGeojson(out,geometry, type,subtype,name,id,color):
+    properties=[{"uid":id,"feature type":type,"type":subtype,"name":name,"color":color}]
     feature=Feature(geometry=geometry,properties=properties)
     out["features"].append(Feature(geometry=geometry,properties=properties))
     return
 
-def getFeatureGeojson(elementsDict,geojsonIn,geojsonOut):
+def getFeatureGeojson(elementsDict,geojsonIn,geojsonOut,chartname):
+    nb=0#count the number of element added
     if len(elementsDict)==0:return #no element to be added to this geojson
     featurescol=readGeojson(geojsonIn)
     for feature in featurescol["features"]:
         featureCode=feature['properties']['featureCode']
         featureType=getFeatureType(feature['properties']['dataType'])
-        featureSubType=getFeatureSubType(featureCode)
+        if featureType in ["AIRSPACE","DESIGNATEDPOINT","NAVAID"]:
+            featureSubType=getFeatureSubType(featureCode)
+        else: continue #in case the feature is another type (for exemple DME or GEOBORDDER) we do not add it
         featureName=getFeatureName(featureCode)
         featureID=feature['properties']["identifier"]['value']
 
@@ -237,19 +236,23 @@ def getFeatureGeojson(elementsDict,geojsonIn,geojsonOut):
             if element['type'] in featureSubType: #check that the type of element is mentionned in the
                 if isinstance(element['name'],str):#if the name is a string, just check if it is contained in the feauture code
                     if element['name'] in featureName:
-                        insertGeojson(geojsonOut,feature['geometry'],featureType,featureSubType,featureName,featureID)
+                        insertGeojson(geojsonOut,feature['geometry'],featureType,featureSubType,featureName,featureID,getcolor(element,featureType))
+                        nb+=1
                     continue
                 if isinstance(element['name'],list):#if the name is a list of name, I need to check if any of them is contained into the feature featureCode
                     for name in element['name']:
                         if name in featureName:
-                            insertGeojson(geojsonOut,feature['geometry'],featureType,featureSubType,featureName,featureID)
-                            continue
+                            insertGeojson(geojsonOut,feature['geometry'],featureType,featureSubType,featureName,featureID,getcolor(element,featureType))
+                            nb+=1
+                        continue
                     continue
                 else:
                     writeLogs("The attribute name of "+element[name]+" should be a string or a list")
+    writeLogs(str(nb)+" elements of type "+featureType+" added to "+chartname+".geojson")
     return
 
-def getRouteGeojson(routesDict,geojsonIn,geojsonOut):
+def getRouteGeojson(routesDict,geojsonIn,geojsonOut,chartname):
+    nb=0#count the number of element added
     if len(routesDict)==0:return #no element to be added to this geojson
     featurescol=readGeojson(geojsonIn)
     for feature in featurescol["features"]:
@@ -260,15 +263,18 @@ def getRouteGeojson(routesDict,geojsonIn,geojsonOut):
 
         for route in routesDict: #check if the feature is part of the list of element to be added in the chart
             if route == featureRouteName:
-                insertGeojson(geojsonOut,feature['geometry'],featureType,'',featureCode,featureID)
+                insertGeojson(geojsonOut,feature['geometry'],featureType,'',featureCode,featureID,'')
+                nb+=1
+    writeLogs(str(nb)+" elements of type "+featureType+" added to "+chartname+".geojson")
     return
 
 def chartGeojson(airspaceGeojson,navaidGeojson,designatedpointGeojson,RouteSegmentGesojson,chartIn):
+    writeLogs("Start to collect the element to create: "+chartIn['NAME']+".geojson")
     chartGeojson=FeatureCollection([]) #geojson for this chart
-    getFeatureGeojson(chartIn['AIRSPACE'],airspaceGeojson,chartGeojson)
-    getFeatureGeojson(chartIn['POINT'],designatedpointGeojson,chartGeojson)
-    getFeatureGeojson(chartIn['NAVAID'],navaidGeojson,chartGeojson)
-    getRouteGeojson(chartIn['ROUTE'],RouteSegmentGesojson,chartGeojson)
+    getFeatureGeojson(chartIn['AIRSPACE'],airspaceGeojson,chartGeojson,chartIn['NAME'])
+    getFeatureGeojson(chartIn['POINT'],designatedpointGeojson,chartGeojson,chartIn['NAME'])
+    getFeatureGeojson(chartIn['NAVAID'],navaidGeojson,chartGeojson,chartIn['NAME'])
+    getRouteGeojson(chartIn['ROUTE'],RouteSegmentGesojson,chartGeojson,chartIn['NAME'])
     savegeojson(chartGeojson,chartIn['NAME'])
     return
 
@@ -279,18 +285,26 @@ AIXM_NAMESPACE={'aixm-message':'http://www.aixm.aero/schema/5.1/message','aixm':
 ######### ZRH Lower Chart ##############
 ZRH_LOWER={}
 ZRH_LOWER['NAME']="ZRH Lower Chart" #name that will appears on the App
-ZRH_LOWER['NAVAID']=[{"type":"","name":["PAS","SPR","FRI","LPS","WIL","ALG","SUL","ZUE","HOC","TRA","GLA","SPR","GVA","BLM","KPT"]}] #Navaid that will be displayed
+ZRH_LOWER['NAVAID']=[{"type":"VOR","name":''},{"type":"DME","name":''},{"type":"VOR","name":'NBD'},{"type":"VOR_DME","name":''},{"type":"VORTAC","name":''}] #Navaid that will be displayed
 ZRH_LOWER['POINT']=[{"type":"ICAO","name":''}]#designated point to be displayed. '' means all
 ZRH_LOWER['ROUTE']=["L613","W112","Z119","Z83"]#route that should be displayed
-ZRH_LOWER['AIRSPACE']=[{"type":"SECTOR","name":"LSZH"},{"type":"AWY","name":''}] #airspace to be displayed. No name means all Airspace of this type
+ZRH_LOWER['AIRSPACE']=[{"type":"SECTOR","name":["NORTH","EAST","WEST","SOUTH"]}] #airspace to be displayed. No name means all Airspace of this type
 
-
+######### DUMMY CHART WITH EVERY TYPE ##############
+DUMMY={}
+DUMMY['NAME']="Dummy Chart" #name that will appears on the App
+DUMMY['NAVAID']=[{"type":"","name":["SUL","HOC","DKB","GLA",'WIL']}] #Navaid that will be displayed
+DUMMY['POINT']=[{"type":"ICAO","name":'AMIKI'},{"type":"OTHER:VFR_REP","name":'LAVER'}]#designated point to be displayed. '' means all
+DUMMY['ROUTE']=["L613"]#route that should be displayed
+DUMMY['AIRSPACE']=[{"type":"SECTOR","name":"NORTH-4","color":"#79B8A9"},{"type":"TMA_P","name":"LSGG-10"},{"type":"TMA","name":"LSME"},{"type":"AWY","name":''},{"type":"CTR","name":'LSZH-1'},{"type":"R","name":'LSR74_1'}]
+##### list of charts#######
+CHART_LIST=[ZRH_LOWER,DUMMY]
 ################################################################
 parser = argparse.ArgumentParser()
 parser.add_argument('--airspace-path', type=str,  help='path of Airspace file without version nor extension', dest='airspace', default='./Airspace')
 parser.add_argument('--routesegment-path', type=str,  help='path of RouteSegment file without version nor extension', dest='routesegment', default='./RouteSegment')
 parser.add_argument('--navaid-designatedpoint-path', type=str, help='path of Navaid_DesignatedPoint file without version nor extension', dest='navaidDesignatedPoint', default='./Navaid_DesignatedPoint')
-parser.add_argument('--globals-layer-path', type=str, help='path of Globals_layer file without version nor extension', dest='globalslayer', default='./Globals_layer')
+parser.add_argument('--sfo-layer-path', type=str, help='path of sfos_layer file without version nor extension', dest='sfolayer', default='./SFO_layer')
 
 args = parser.parse_args()
 
@@ -305,7 +319,7 @@ designatedpointGeojson="DesignatedPoint.geojson"
 navaidGeojson="Navaid.geojson"
 RouteSegmentGesojson="RouteSegment.geojson"
 #output
-#fglobalslayer=checkLastVersion(args.globalslayer)
+#fsfolayer=checkLastVersion(args.sfolayer)
 
 #extract elements from the xml
 airspaces=extractFeatureAIXM(airspacexml,"Airspace")
@@ -314,14 +328,16 @@ points=extractFeatureAIXM(pointxml,"DesignatedPoint")
 routesegments=extractFeatureAIXM(routesegmentxml, "RouteSegment")
 routes=extractFeatureAIXM(routesegmentxml, "Route")
 
-globalslayer={}
-globalslayer["Global Layers"]=[]
+sfolayer={}
+sfolayer["sfo Layers"]=[]
+for chartdef in CHART_LIST:
 
-chartDefinition(airspaces,navaids,points,routesegments,routes,ZRH_LOWER,globalslayer)
-chartGeojson(airspaceGeojson,navaidGeojson,designatedpointGeojson,RouteSegmentGesojson,ZRH_LOWER)
+    chartGeojson(airspaceGeojson,navaidGeojson,designatedpointGeojson,RouteSegmentGesojson,chartdef)
 
+for chartdef in CHART_LIST:
 
+    chartDefinition(airspaces,navaids,points,routesegments,routes,chartdef,sfolayer)
 
-savejson(globalslayer,args.globalslayer)
+savejson(sfolayer,args.sfolayer)
 writeLogs("File Updated")
 writeLogs("Done!")
