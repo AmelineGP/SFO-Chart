@@ -6,6 +6,7 @@ import time
 import geojson
 from geojson import Feature, Point, FeatureCollection, Polygon
 import re
+import os
 
 def writeLogs(line):
     print(line)
@@ -74,13 +75,59 @@ def extractFeatureAIXM(fxml,featureType): #return all the feature of this featur
     elements = findAllcheck(elementTree,'aixm-message:hasMember/aixm:'+featureType)
     return elements
 
-def getcolor(elem,type): #only for airspaces, this function return the defined color that should be applied, or grey (#CBD2D0) if none
+def checkLastVersion(v):
+    if len(v) == 1:
+        file_path = "./"
+        file_name = v
+    else:
+        p = os.path.split(v)
+        file_path = p[0]
+        file_name = p[1]
+
+    print("path: ",file_path,"name : ",file_name)
+
+    file_list = os.listdir(file_path)
+    lastUpdateName=''
+    lastUpdate=0
+
+    lname=len(file_name)
+    for file in file_list:
+        if file[0:lname]==file_name:
+            try:
+                fdate=int(getFileDate(file))
+            except:
+                writeLogs("ERROR: No date in the name of:"+ file)
+                continue
+            if fdate>lastUpdate:
+                lastUpdate=fdate
+                lastUpdateName=file
+    if lastUpdate!=0:
+        writeLogs('INFO: File used : '+ lastUpdateName +" in :"+file_path)
+        return lastUpdateName
+    writeLogs('INFO: no file found with the following name: '+file_name+ "in:"+file_path)
+    return
+
+def getFileDate(name):
+    fulldate=re.search(r'\d+',name).group()
+    return fulldate[0:8]
+
+def getcolor(elem,type): # this function return the defined color that should be applied, or grey (#CBD2D0) if none
     if elem.get('color')!=None:return elem.get('color')
     if type in ['AIRSPACE','Airspace']: return '#CBD2D0'
+    if type in ['DESIGNATEDPOINT','DesignatedPoint']: return '#549CE5'
+    if type in ['NAVAID','Navaid']: return '#AAB2BA'
     return ''
 
+def getActivity(Airspace): #check the activity Type
+    activities=[]
+    activations=findAllcheck(Airspace,'aixm:activation/aixm:AirspaceActivation')
+    for activation in activations:
+        activity=lookup(activation,'activity')
+        if activity!='':activities.append(activity)
+    return activities
+
 def getElement(feature,allElements,elementsToAdd,doc):
-    if len(elementsToAdd)==0:return #no element to be added to this chart
+    if len(elementsToAdd)==0:return [] #no element to be added to this chart
     elementForChart=[]
     for element in allElements:
         id=lookup(element, 'identifier')
@@ -89,7 +136,13 @@ def getElement(feature,allElements,elementsToAdd,doc):
             designator=lookup(elementTS,'designator')
             type=lookup(elementTS,'type')
             for elementToAdd in elementsToAdd:
-                if elementToAdd['type'] in type:
+                if elementToAdd['type'] == type or elementToAdd['type'] =='': #if type='', it means that any type should be taken into consideration
+                    if elementToAdd.get('activity')!=None:#for airspaces, an activity type could be define
+                        if elementToAdd['activity'] not in getActivity(elementTS):
+                            print(getActivity(elementTS))
+                            continue#if the activity does not correspond to the define one, ignore this element
+                        else:
+                            print(designator)
                     if isinstance(elementToAdd['name'],str) and elementToAdd['name'] in designator: #if only one string is defined, we check if the designator contain this string
                         elementForChart.append({"name":designator,"featureType":feature,"type":type,'referencedoc':doc,'ref_uid':id,'color':getcolor(elementToAdd,feature)})
                     if isinstance(elementToAdd['name'],list):
@@ -149,12 +202,12 @@ def getPointName(point,pointsxml,navaidsxml):
 def addSegment(elementForChart,segment,startname,endname,docSegment,docPoint):
     segmentname=segment['route name']+' ('+startname+' - '+endname+')'
     startend=[{'name':startname,'featureType':segment['refstart']['type'],'referencedoc':docPoint,'ref_uid':segment['refstart']['id']},{'name':endname,'featureType':segment['refend']['type'],'referencedoc':docPoint,'ref_uid':segment['refend']['id']}]
-    elementForChart.append({"name":segmentname,"featureType":'RouteSegment','referencedoc':docSegment,'ref_uid':segment['id'],"Points":startend})
+    elementForChart.append({"name":segmentname,"featureType":'RouteSegment','referencedoc':docSegment,'ref_uid':segment['id'],'color':ROUTE_COLOR,"Points":startend})
     return elementForChart
 
 
 def getRouteSegment(routesxml,routesegmentsxml,pointsxml,navaidsxml,routetoadd,docSegment,docPoint):
-    if len(routetoadd)==0:return
+    if len(routetoadd)==0:return []
     elementForChart=[]
     routesID=getRoutesID(routesxml,routetoadd)#list of all the ID of the route to be displayed on the chart
     segmentsRef=getSegmentRefRoute(routesegmentsxml,routesID)#liste of the segment referencing those routes ID
@@ -167,17 +220,6 @@ def getRouteSegment(routesxml,routesegmentsxml,pointsxml,navaidsxml,routetoadd,d
 
     return elementForChart
 
-def chartDefinition(airspaces,navaids,points,routesegments,routes,chartIn,chartConf):
-    writeLogs("starting to collect the element to add to the .json for: "+chartIn['NAME'])
-    airspaceForChart=getElement("Airspace",airspaces,chartIn['AIRSPACE'],'Airspace_NoRefGeoborder.xml')
-    navaidForChart=getElement("Navaid",navaids,chartIn['NAVAID'],'DesignatedPoint_Navaid.xml')
-    designatedPointForChart=getElement("DesignatedPoint",points,chartIn['POINT'],'DesignatedPoint_Navaid.xml')
-    routesegmentForChart=getRouteSegment(routes,routesegments,points,navaids,chartIn['ROUTE'],'RouteSegment.xml','DesignatedPoint_Navaid.xml')
-
-
-    elements=airspaceForChart+navaidForChart+designatedPointForChart+routesegmentForChart#list of elements contained in chartConf
-    chartConf["sfo Layers"].append({"chartname":chartIn['NAME'], "elements":elements})
-    return
 
 def readGeojson(fgeojson):
     data=open(fgeojson,'r')
@@ -214,7 +256,7 @@ def getFeatureName(geojsonfc):
     return name
 
 def insertGeojson(out,geometry, type,subtype,name,id,color):
-    properties=[{"uid":id,"feature type":type,"type":subtype,"name":name,"color":color}]
+    properties={"uid":id,"feature type":type,"type":subtype,"name":name,"color":color}
     feature=Feature(geometry=geometry,properties=properties)
     out["features"].append(Feature(geometry=geometry,properties=properties))
     return
@@ -233,7 +275,7 @@ def getFeatureGeojson(elementsDict,geojsonIn,geojsonOut,chartname):
         featureID=feature['properties']["identifier"]['value']
 
         for element in elementsDict: #check if the feature is part of the list of element to be added in the chart
-            if element['type'] in featureSubType: #check that the type of element is mentionned in the
+            if element['type'] == featureSubType or element['type'] =='': #if type='', it means that any type should be taken into consideration
                 if isinstance(element['name'],str):#if the name is a string, just check if it is contained in the feauture code
                     if element['name'] in featureName:
                         insertGeojson(geojsonOut,feature['geometry'],featureType,featureSubType,featureName,featureID,getcolor(element,featureType))
@@ -263,7 +305,7 @@ def getRouteGeojson(routesDict,geojsonIn,geojsonOut,chartname):
 
         for route in routesDict: #check if the feature is part of the list of element to be added in the chart
             if route == featureRouteName:
-                insertGeojson(geojsonOut,feature['geometry'],featureType,'',featureCode,featureID,'')
+                insertGeojson(geojsonOut,feature['geometry'],featureType,'',featureCode,featureID,ROUTE_COLOR)
                 nb+=1
     writeLogs(str(nb)+" elements of type "+featureType+" added to "+chartname+".geojson")
     return
@@ -278,41 +320,95 @@ def chartGeojson(airspaceGeojson,navaidGeojson,designatedpointGeojson,RouteSegme
     savegeojson(chartGeojson,chartIn['NAME'])
     return
 
+def chartDefinition(airspaces,navaids,points,routesegments,routes,chartIn,chartConf):
+    writeLogs("starting to collect the element to add to the .json for: "+chartIn['NAME'])
+    airspaceForChart=getElement("Airspace",airspaces,chartIn['AIRSPACE'],'Airspace_NoRefGeoborder.xml')
+    designatedPointForChart=getElement("DesignatedPoint",points,chartIn['POINT'],'DesignatedPoint_Navaid.xml')
+    navaidForChart=getElement("Navaid",navaids,chartIn['NAVAID'],'DesignatedPoint_Navaid.xml')
+    routesegmentForChart=getRouteSegment(routes,routesegments,points,navaids,chartIn['ROUTE'],'RouteSegment.xml','DesignatedPoint_Navaid.xml')
 
+
+    elements=airspaceForChart+navaidForChart+designatedPointForChart+routesegmentForChart#list of elements contained in chartConf
+    chartConf["sfo Layers"].append({"chartname":chartIn['NAME'], "elements":elements})
+    return
 
 #########GLOBAL VARIABLE########################################
 AIXM_NAMESPACE={'aixm-message':'http://www.aixm.aero/schema/5.1/message','aixm':"http://www.aixm.aero/schema/5.1",'gml':"http://www.opengis.net/gml/3.2",'xlink':"http://www.w3.org/1999/xlink"}
+ROUTE_COLOR='#3D5B74'
+
 ######### ZRH Lower Chart ##############
 ZRH_LOWER={}
 ZRH_LOWER['NAME']="ZRH Lower Chart" #name that will appears on the App
-ZRH_LOWER['NAVAID']=[{"type":"VOR","name":''},{"type":"DME","name":''},{"type":"VOR","name":'NBD'},{"type":"VOR_DME","name":''},{"type":"VORTAC","name":''}] #Navaid that will be displayed
+ZRH_LOWER['NAVAID']=[{"type":"VOR","name":''},{"type":"DME","name":''},{"type":"NDB","name":''},{"type":"VOR_DME","name":''},{"type":"VORTAC","name":''}] #Navaid that will be displayed
 ZRH_LOWER['POINT']=[{"type":"ICAO","name":''}]#designated point to be displayed. '' means all
 ZRH_LOWER['ROUTE']=["L613","W112","Z119","Z83"]#route that should be displayed
 ZRH_LOWER['AIRSPACE']=[{"type":"SECTOR","name":["NORTH","EAST","WEST","SOUTH"]}] #airspace to be displayed. No name means all Airspace of this type
 
+######### ZRH Upper Chart ##############
+ZRH_UPPER={}
+ZRH_UPPER['NAME']="ZRH Upper Chart" #name that will appears on the App
+ZRH_UPPER['NAVAID']=[{"type":"VOR","name":''},{"type":"DME","name":''},{"type":"NDB","name":''},{"type":"VOR_DME","name":''},{"type":"VORTAC","name":''}] #Navaid that will be displayed
+ZRH_UPPER['POINT']=[{"type":"ICAO","name":''}]#designated point to be displayed. '' means all
+ZRH_UPPER['ROUTE']=["UL613","UP131","Z119","UZ6113","UZ630"]#route that should be displayed
+ZRH_UPPER['AIRSPACE']=[{"type":"SECTOR","name":["M2","M1"],"color":"#79B8A9"}] #airspace to be displayed. No name means all Airspace of this type
+
+######### GVA Lower Chart ##############
+GVA_LOWER={}
+GVA_LOWER['NAME']="GVA Lower Chart" #name that will appears on the App
+GVA_LOWER['NAVAID']=[{"type":"VOR","name":''},{"type":"DME","name":''},{"type":"NDB","name":''},{"type":"VOR_DME","name":''},{"type":"VORTAC","name":''}] #Navaid that will be displayed
+GVA_LOWER['POINT']=[{"type":"ICAO","name":''}]#designated point to be displayed. '' means all
+GVA_LOWER['ROUTE']=[]#route that should be displayed
+GVA_LOWER['AIRSPACE']=[{"type":"SECTOR","name":["L1"],"color":"#79B8A9"},{"type":"AWY","name":''},{"type":"CTR","name":''},{"type":"TMA","name":"LS"}] #airspace to be displayed. No name means all Airspace of this type
+
+######### GVA Upper Chart ##############
+GVA_UPPER={}
+GVA_UPPER['NAME']="GVA Upper Chart" #name that will appears on the App
+GVA_UPPER['NAVAID']=[{"type":"VOR","name":''},{"type":"DME","name":''},{"type":"NDB","name":''},{"type":"VOR_DME","name":''},{"type":"VORTAC","name":''}] #Navaid that will be displayed
+GVA_UPPER['POINT']=[{"type":"ICAO","name":''}]#designated point to be displayed. '' means all
+GVA_UPPER['ROUTE']=['UN852','UN853','UL153','UN869','UN871','UM729','UM135','UM730','Y24','UP860','UT45','UL612','UM975']#route that should be displayed
+GVA_UPPER['AIRSPACE']=[{"type":"SECTOR","name":["L1"],"color":"#79B8A9"},{"type":"AWY","name":''},{"type":"CTR","name":''},{"type":"TMA","name":"LS"} ] #airspace to be displayed. No name means all Airspace of this type
+
+######### TWR/APP Chart ##############
+TWR_APP={}
+TWR_APP['NAME']="TWR APP Chart" #name that will appears on the App
+TWR_APP['NAVAID']=[{"type":"VOR","name":''},{"type":"DME","name":''},{"type":"NDB","name":''},{"type":"VOR_DME","name":''},{"type":"VORTAC","name":''}] #Navaid that will be displayed
+TWR_APP['POINT']=[{"type":"ICAO","name":''},{"type":"OTHER:VFR_REP","name":'','color':"#67E175"}]#designated point to be displayed. '' means all
+TWR_APP['ROUTE']=[]#route that should be displayed
+TWR_APP['AIRSPACE']=[{"type":"SECTOR","name":'LSZH',"color":"#79B8A9"},{"type":"AWY","name":''},{"type":"CTR","name":''},{"type":"TMA","name":"LS"},{"type":"R","name":'','color':'#909491','activity':'GLIDING'} ] #airspace to be displayed. No name means all Airspace of this type
+
+
 ######### DUMMY CHART WITH EVERY TYPE ##############
-DUMMY={}
+'''DUMMY={}
 DUMMY['NAME']="Dummy Chart" #name that will appears on the App
 DUMMY['NAVAID']=[{"type":"","name":["SUL","HOC","DKB","GLA",'WIL']}] #Navaid that will be displayed
 DUMMY['POINT']=[{"type":"ICAO","name":'AMIKI'},{"type":"OTHER:VFR_REP","name":'LAVER'}]#designated point to be displayed. '' means all
 DUMMY['ROUTE']=["L613"]#route that should be displayed
-DUMMY['AIRSPACE']=[{"type":"SECTOR","name":"NORTH-4","color":"#79B8A9"},{"type":"TMA_P","name":"LSGG-10"},{"type":"TMA","name":"LSME"},{"type":"AWY","name":''},{"type":"CTR","name":'LSZH-1'},{"type":"R","name":'LSR74_1'}]
+DUMMY['AIRSPACE']=[{"type":"SECTOR","name":"NORTH-4","color":"#79B8A9"},{"type":"TMA_P","name":"LSGG-10"},{"type":"TMA","name":"LSME"},{"type":"AWY","name":''},{"type":"CTR","name":'LSZH-1'},{"type":"R","name":'LSR74_1'}]'''
 ##### list of charts#######
-CHART_LIST=[ZRH_LOWER,DUMMY]
+CHART_LIST=[ZRH_LOWER,ZRH_UPPER,GVA_LOWER,GVA_UPPER,TWR_APP]
 ################################################################
 parser = argparse.ArgumentParser()
 parser.add_argument('--airspace-path', type=str,  help='path of Airspace file without version nor extension', dest='airspace', default='./Airspace')
 parser.add_argument('--routesegment-path', type=str,  help='path of RouteSegment file without version nor extension', dest='routesegment', default='./RouteSegment')
-parser.add_argument('--navaid-designatedpoint-path', type=str, help='path of Navaid_DesignatedPoint file without version nor extension', dest='navaidDesignatedPoint', default='./Navaid_DesignatedPoint')
+parser.add_argument('--navaid-designatedpoint-path', type=str, help='path of Navaid_DesignatedPoint file without version nor extension', dest='designatedPointNavaid', default='./DesignatedPoint_Navaid')
 parser.add_argument('--sfo-layer-path', type=str, help='path of sfos_layer file without version nor extension', dest='sfolayer', default='./SFO_layer')
 
 args = parser.parse_args()
+args = parser.parse_args()
 
 #input
-routesegmentxml='RouteSegment_20210331.xml'#checkLastVersion(args.routesegment)
+routesegmentxml=checkLastVersion(args.routesegment)
+airspacexml=checkLastVersion(args.airspace)
+pointxml=checkLastVersion(args.designatedPointNavaid)
+
+print('\n')
+
+
+#input
+'''routesegmentxml='RouteSegment_20210331.xml'#checkLastVersion(args.routesegment)
 airspacexml='Airspace_NoRefGeoborder_20201231.xml'#checkLastVersion(args.airspace)
 pointxml='DesignatedPoint_Navaid_20210329.xml'#checkLastVersion(args.navaidDesignatedPoint)
-routesegmentxml="RouteSegment_20210331.xml"
+routesegmentxml="RouteSegment_20210331.xml"'''
 
 airspaceGeojson="Airspace.geojson"
 designatedpointGeojson="DesignatedPoint.geojson"
@@ -330,13 +426,14 @@ routes=extractFeatureAIXM(routesegmentxml, "Route")
 
 sfolayer={}
 sfolayer["sfo Layers"]=[]
-for chartdef in CHART_LIST:
+'''for chartdef in CHART_LIST:
 
-    chartGeojson(airspaceGeojson,navaidGeojson,designatedpointGeojson,RouteSegmentGesojson,chartdef)
+    chartGeojson(airspaceGeojson,navaidGeojson,designatedpointGeojson,RouteSegmentGesojson,chartdef)'''
 
 for chartdef in CHART_LIST:
 
     chartDefinition(airspaces,navaids,points,routesegments,routes,chartdef,sfolayer)
+    print('\n')
 
 savejson(sfolayer,args.sfolayer)
 writeLogs("File Updated")
