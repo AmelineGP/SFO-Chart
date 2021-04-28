@@ -139,10 +139,7 @@ def getElement(feature,allElements,elementsToAdd,doc):
                 if elementToAdd['type'] == type or elementToAdd['type'] =='': #if type='', it means that any type should be taken into consideration
                     if elementToAdd.get('activity')!=None:#for airspaces, an activity type could be define
                         if elementToAdd['activity'] not in getActivity(elementTS):
-                            print(getActivity(elementTS))
                             continue#if the activity does not correspond to the define one, ignore this element
-                        else:
-                            print(designator)
                     if isinstance(elementToAdd['name'],str) and elementToAdd['name'] in designator: #if only one string is defined, we check if the designator contain this string
                         elementForChart.append({"name":designator,"featureType":feature,"type":type,'referencedoc':doc,'ref_uid':id,'color':getcolor(elementToAdd,feature)})
                     if isinstance(elementToAdd['name'],list):
