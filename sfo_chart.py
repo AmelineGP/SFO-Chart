@@ -7,6 +7,8 @@ import geojson
 from geojson import Feature, Point, FeatureCollection, Polygon
 import re
 import os
+'''from geographiclib.geodesic import Geodesic
+import math'''
 
 def writeLogs(line):
     print(line)
@@ -159,6 +161,91 @@ def getRoutesID(routes,routeNames):#return a dictionary with for each route id, 
                 if name == lookup(routeTS,'name'):
                     ids[id]=name
     return ids
+def showMe(runwayAxisIDs):
+    for ra in runwayAxisIDs:
+        writeLogs("Key : {} , first_dir : {}, second_dir : {}".format(ra['id'],ra['first_dir'],ra['second_dir']))
+    exit()
+
+def getRunwayDirectionID(runwaydirectionsxml,ref):
+    for rwydir in runwaydirectionsxml:
+        id=lookup(rwydir, 'identifier')
+        allrwydirTS=findAllcheck(rwydir, 'aixm:timeSlice/aixm:RunwayDirectionTimeSlice')
+        for rwydirTS in allrwydirTS:
+            allrwyext=findAllcheck(rwydirTS, 'aixm:extension/cae:RunwayDirectionExtension')
+            for rwyext in allrwyext:
+                featureCode=lookup(rwyext, 'featureCode')
+                if featureCode == ref:
+                    return id
+    return ''
+
+def getRunwayCentrelinePoint(runwaycentrelinepointsxml,runwaydirid):
+    result=[]
+    for centrelinePoint in runwaycentrelinepointsxml:
+        id=lookup(centrelinePoint, 'identifier')
+        allpointTS=findAllcheck(centrelinePoint, 'aixm:timeSlice/aixm:RunwayCentrelinePointTimeSlice')
+        for pointTS in allpointTS:
+            onrwy=lookupattrib(pointTS,'onRunway',"href")
+            role=lookup(pointTS, 'role')
+            if runwaydirid in onrwy and role in RWYCENTRELINEPTROLE:
+                allpositions=findAllcheck(pointTS, 'aixm:location/aixm:ElevatedPoint')
+                for position in allpositions:
+                    pos=lookup(position, 'pos')
+                    result=[id,pos]
+                    return result
+    return []
+
+def getSecondAxisPoint(startpos,refpos,len):
+    pos=''
+    # writeLogs("start position :"+startpos)
+    # writeLogs("reference position :"+refpos)
+    # start point
+    startcoord=startpos.split(" ")
+    startlat=float(startcoord[0])
+    startlong=float(startcoord[1])
+    # reference point
+    refcoord=refpos.split(" ")
+    reflat=float(refcoord[0])
+    reflong=float(refcoord[1])
+
+    geod=Geodesic.WGS84 # define the WGS84 ellipsoid
+    # get distance between start and ref points
+    distance=geod.Inverse(reflat, reflong, startlat, startlong)
+    # get ratio
+    ratio=(distance['s12']+(len*1.852e3))/distance['s12']
+    # compute second axis point
+    l=geod.InverseLine(reflat, reflong, startlat, startlong)
+    g=l.Position(ratio * l.s13)
+    pos="{:.15f} {:.15f}".format(g['lat2'],g['lon2'])
+    return pos
+
+def getRunwayAxisPoints(runwaydirectionsxml,runwaycentrelinepointsxml,elementsToAdd,doc):
+    if len(elementsToAdd)==0:return
+    elementForChart=[]
+    for elementToAdd in elementsToAdd:
+        if isinstance(elementToAdd['airport'],str) and isinstance(elementToAdd['axis'], str) and isinstance(elementToAdd['length'], int):
+            directions=elementToAdd['axis'].split("_")
+        if len(directions) != 2:
+            continue
+        # get runway directions IDs
+        first_rwyref=directions[0]+" "+elementToAdd['airport']
+        first_rwydirid=getRunwayDirectionID(runwaydirectionsxml,first_rwyref)
+        second_rwyref=directions[1]+" "+elementToAdd['airport']
+        second_rwydirid=getRunwayDirectionID(runwaydirectionsxml,second_rwyref)
+        # get runway centreline points
+        first_rwyref=elementToAdd['airport']+"_"+directions[0]
+        second_rwyref=elementToAdd['airport']+"_"+directions[1]
+        first_point=getRunwayCentrelinePoint(runwaycentrelinepointsxml,first_rwydirid)
+        third_point=getRunwayCentrelinePoint(runwaycentrelinepointsxml,second_rwydirid)
+        # compute coordinates
+        second_point=getSecondAxisPoint(third_point[1],first_point[1],elementToAdd['length'])
+        fourth_point=getSecondAxisPoint(first_point[1],third_point[1],elementToAdd['length'])
+
+        first_points={'name':'START_POINT','featureType':'RunwayCentreLinePoint','referencedoc':doc,'ref_uid':first_point[0]},{'name':'END_POINT','featureType':'Point','coordinates':[fourth_point]}
+        elementForChart.append({'name':first_rwyref,'featureType':'RunwayAxis','referencedoc':'','ref_uid':'','color':'#9B59B6','Points':first_points})
+        second_points={'name':'START_POINT','featureType':'RunwayCentreLinePoint','referencedoc':doc,'ref_uid':third_point[0]},{'name':'END_POINT','featureType':'Point','coordinates':[second_point]}
+        elementForChart.append({'name':second_rwyref,'featureType':'RunwayAxis','referencedoc':'','ref_uid':'','color':'#9B59B6','Points':second_points})
+    writeLogs(str(len(elementForChart))+" elements of type RunwayAxis added to "+args.sfolayer+".json")
+    return elementForChart
 
 def getPointRefID(segment,startorend):
     point=segment.find('aixm:'+startorend+'/aixm:EnRouteSegmentPoint',AIXM_NAMESPACE)
@@ -214,9 +301,20 @@ def getRouteSegment(routesxml,routesegmentsxml,pointsxml,navaidsxml,routetoadd,d
         elementForChart=addSegment(elementForChart,segment,startname,endname,docSegment,docPoint)
     writeLogs(str(len(elementForChart))+" elements of type route segment added to "+args.sfolayer+".json")
 
-
     return elementForChart
 
+def chartDefinition(airspaces,navaids,points,routesegments,routes,chartIn,chartConf):
+    writeLogs("starting to collect the element to add to the .json for: "+chartIn['NAME'])
+    airspaceForChart=getElement("Airspace",airspaces,chartIn['AIRSPACE'],'Airspace_NoRefGeoborder.xml')
+    designatedPointForChart=getElement("DesignatedPoint",points,chartIn['POINT'],'DesignatedPoint_Navaid.xml')
+    navaidForChart=getElement("Navaid",navaids,chartIn['NAVAID'],'DesignatedPoint_Navaid.xml')
+    routesegmentForChart=getRouteSegment(routes,routesegments,points,navaids,chartIn['ROUTE'],'RouteSegment.xml','DesignatedPoint_Navaid.xml')
+    runwaycentrelinepointForChart=getRunwayAxisPoints(runwaydirections,runwaycentrelinepoints,chartIn['RWYAXIS'],'RunwayCentrelinePoint.xml')
+
+
+    elements=airspaceForChart+navaidForChart+designatedPointForChart+routesegmentForChart+runwaycentrelinepointForChart#list of elements contained in chartConf
+    chartConf["sfo Layers"].append({"chartname":chartIn['NAME'], "elements":elements})
+    return
 
 def readGeojson(fgeojson):
     data=open(fgeojson,'r')
@@ -317,18 +415,6 @@ def chartGeojson(airspaceGeojson,navaidGeojson,designatedpointGeojson,RouteSegme
     savegeojson(chartGeojson,chartIn['NAME'])
     return
 
-def chartDefinition(airspaces,navaids,points,routesegments,routes,chartIn,chartConf):
-    writeLogs("starting to collect the element to add to the .json for: "+chartIn['NAME'])
-    airspaceForChart=getElement("Airspace",airspaces,chartIn['AIRSPACE'],'Airspace_NoRefGeoborder.xml')
-    designatedPointForChart=getElement("DesignatedPoint",points,chartIn['POINT'],'DesignatedPoint_Navaid.xml')
-    navaidForChart=getElement("Navaid",navaids,chartIn['NAVAID'],'DesignatedPoint_Navaid.xml')
-    routesegmentForChart=getRouteSegment(routes,routesegments,points,navaids,chartIn['ROUTE'],'RouteSegment.xml','DesignatedPoint_Navaid.xml')
-
-
-    elements=airspaceForChart+navaidForChart+designatedPointForChart+routesegmentForChart#list of elements contained in chartConf
-    chartConf["sfo Layers"].append({"chartname":chartIn['NAME'], "elements":elements})
-    return
-
 #########GLOBAL VARIABLE########################################
 AIXM_NAMESPACE={'aixm-message':'http://www.aixm.aero/schema/5.1/message','aixm':"http://www.aixm.aero/schema/5.1",'gml':"http://www.opengis.net/gml/3.2",'xlink':"http://www.w3.org/1999/xlink"}
 ROUTE_COLOR='#3D5B74'
@@ -372,15 +458,8 @@ TWR_APP['NAVAID']=[{"type":"VOR","name":''},{"type":"DME","name":''},{"type":"ND
 TWR_APP['POINT']=[{"type":"ICAO","name":''},{"type":"OTHER:VFR_REP","name":'','color':"#67E175"}]#designated point to be displayed. '' means all
 TWR_APP['ROUTE']=[]#route that should be displayed
 TWR_APP['AIRSPACE']=[{"type":"SECTOR","name":'LSZH',"color":"#79B8A9"},{"type":"AWY","name":''},{"type":"CTR","name":''},{"type":"TMA","name":"LS"},{"type":"R","name":'','color':'#909491','activity':'GLIDING'} ] #airspace to be displayed. No name means all Airspace of this type
+TWR_APP['RWYAXIS']=[{"airport":"LSGG","axis":"04_22","length":20},{"airport":"LSZH","axis":"10_28","length":20},{"airport":"LSZH","axis":"16_34","length":20},{"airport":"LSZH","axis":"14_32","length":20},{"airport":"LSMD","axis":"11_29","length":10}]
 
-
-######### DUMMY CHART WITH EVERY TYPE ##############
-'''DUMMY={}
-DUMMY['NAME']="Dummy Chart" #name that will appears on the App
-DUMMY['NAVAID']=[{"type":"","name":["SUL","HOC","DKB","GLA",'WIL']}] #Navaid that will be displayed
-DUMMY['POINT']=[{"type":"ICAO","name":'AMIKI'},{"type":"OTHER:VFR_REP","name":'LAVER'}]#designated point to be displayed. '' means all
-DUMMY['ROUTE']=["L613"]#route that should be displayed
-DUMMY['AIRSPACE']=[{"type":"SECTOR","name":"NORTH-4","color":"#79B8A9"},{"type":"TMA_P","name":"LSGG-10"},{"type":"TMA","name":"LSME"},{"type":"AWY","name":''},{"type":"CTR","name":'LSZH-1'},{"type":"R","name":'LSR74_1'}]'''
 ##### list of charts#######
 CHART_LIST=[ZRH_LOWER,ZRH_UPPER,GVA_LOWER,GVA_UPPER,TWR_APP]
 ################################################################
@@ -389,6 +468,7 @@ parser.add_argument('--airspace-path', type=str,  help='path of Airspace file wi
 parser.add_argument('--routesegment-path', type=str,  help='path of RouteSegment file without version nor extension', dest='routesegment', default='./RouteSegment')
 parser.add_argument('--navaid-designatedpoint-path', type=str, help='path of Navaid_DesignatedPoint file without version nor extension', dest='designatedPointNavaid', default='./DesignatedPoint_Navaid')
 parser.add_argument('--sfo-layer-path', type=str, help='path of sfos_layer file without version nor extension', dest='sfolayer', default='./SFO_layer')
+parser.add_argument('--runwaycentrelinepoint-path', type=str, help='path of RunwayCentrelinePoint file without version nor extension', dest='runwaycentrelinepoint', default='./RunwayCentrePoint')
 
 args = parser.parse_args()
 args = parser.parse_args()
@@ -397,15 +477,10 @@ args = parser.parse_args()
 routesegmentxml=checkLastVersion(args.routesegment)
 airspacexml=checkLastVersion(args.airspace)
 pointxml=checkLastVersion(args.designatedPointNavaid)
+runwaycentrelinepointxml=checkLastVersion(args.runwaycentrelinepoint)
 
 print('\n')
 
-
-#input
-'''routesegmentxml='RouteSegment_20210331.xml'#checkLastVersion(args.routesegment)
-airspacexml='Airspace_NoRefGeoborder_20201231.xml'#checkLastVersion(args.airspace)
-pointxml='DesignatedPoint_Navaid_20210329.xml'#checkLastVersion(args.navaidDesignatedPoint)
-routesegmentxml="RouteSegment_20210331.xml"'''
 
 airspaceGeojson="Airspace.geojson"
 designatedpointGeojson="DesignatedPoint.geojson"
@@ -420,6 +495,8 @@ navaids=extractFeatureAIXM(pointxml,"Navaid")
 points=extractFeatureAIXM(pointxml,"DesignatedPoint")
 routesegments=extractFeatureAIXM(routesegmentxml, "RouteSegment")
 routes=extractFeatureAIXM(routesegmentxml, "Route")
+runwaydirections=extractFeatureAIXM(runwaycentrelinepointxml, "RunwayDirection")
+runwaycentrelinepoints=extractFeatureAIXM(runwaycentrelinepointxml, "RunwayCentrelinePoint")
 
 sfolayer={}
 sfolayer["sfo Layers"]=[]
