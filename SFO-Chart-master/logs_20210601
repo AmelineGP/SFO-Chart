@@ -1,0 +1,1101 @@
+20210601152603 ERROR: No date in the name of:RouteSegment.geojson
+20210601152603 INFO: File used : RouteSegment_20210520.xml in :.
+20210601152603 ERROR: No date in the name of:Airspace.geojson
+20210601152603 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210601152603 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210601152603 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210601152604 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayDirection
+20210601152604 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210601152604 21 elements of type Airspace added to ./SFO_layer.json
+20210601152604 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601152604 72 elements of type Navaid added to ./SFO_layer.json
+20210601152604 0 elements of type route segment added to ./SFO_layer.json
+20210601152604 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210601152604 2 elements of type Airspace added to ./SFO_layer.json
+20210601152604 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601152604 72 elements of type Navaid added to ./SFO_layer.json
+20210601152604 0 elements of type route segment added to ./SFO_layer.json
+20210601152604 starting to collect the element to add to the .json for: GVA Lower Chart
+20210601152604 35 elements of type Airspace added to ./SFO_layer.json
+20210601152604 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601152604 72 elements of type Navaid added to ./SFO_layer.json
+20210601152604 starting to collect the element to add to the .json for: GVA Upper Chart
+20210601152604 35 elements of type Airspace added to ./SFO_layer.json
+20210601152604 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601152604 72 elements of type Navaid added to ./SFO_layer.json
+20210601152604 0 elements of type route segment added to ./SFO_layer.json
+20210601152604 starting to collect the element to add to the .json for: TWR APP Chart
+20210601152604 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601152604 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601152604 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601152604 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601152604 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601152604 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601152604 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601152604 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601152604 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601152604 56 elements of type Airspace added to ./SFO_layer.json
+20210601152604 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601152604 72 elements of type Navaid added to ./SFO_layer.json
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601152604 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154236 ERROR: No date in the name of:RouteSegment.geojson
+20210601154236 INFO: File used : RouteSegment_20210520.xml in :.
+20210601154236 ERROR: No date in the name of:Airspace.geojson
+20210601154236 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210601154236 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210601154236 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210601154237 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayDirection
+20210601154237 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210601154237 21 elements of type Airspace added to ./SFO_layer.json
+20210601154237 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601154237 72 elements of type Navaid added to ./SFO_layer.json
+20210601154238 0 elements of type route segment added to ./SFO_layer.json
+20210601154238 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210601154238 2 elements of type Airspace added to ./SFO_layer.json
+20210601154238 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601154238 72 elements of type Navaid added to ./SFO_layer.json
+20210601154238 0 elements of type route segment added to ./SFO_layer.json
+20210601154238 starting to collect the element to add to the .json for: GVA Lower Chart
+20210601154238 35 elements of type Airspace added to ./SFO_layer.json
+20210601154238 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601154238 72 elements of type Navaid added to ./SFO_layer.json
+20210601154238 starting to collect the element to add to the .json for: GVA Upper Chart
+20210601154238 35 elements of type Airspace added to ./SFO_layer.json
+20210601154238 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601154238 72 elements of type Navaid added to ./SFO_layer.json
+20210601154238 0 elements of type route segment added to ./SFO_layer.json
+20210601154238 starting to collect the element to add to the .json for: TWR APP Chart
+20210601154238 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601154238 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601154238 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601154238 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601154238 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601154238 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601154238 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601154238 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601154238 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601154238 56 elements of type Airspace added to ./SFO_layer.json
+20210601154238 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601154238 72 elements of type Navaid added to ./SFO_layer.json
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601154238 there is no Element  with the tag aixm:location/aixm:ElevatedPoint
+20210601160933 ERROR: No date in the name of:RouteSegment.geojson
+20210601160933 INFO: File used : RouteSegment_20210520.xml in :.
+20210601160933 ERROR: No date in the name of:Airspace.geojson
+20210601160933 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210601160933 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210601160933 INFO: File used : RunwayCentrePoint_20210427.xml in :.
+20210601160934 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210601160934 21 elements of type Airspace added to ./SFO_layer.json
+20210601160934 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601160934 72 elements of type Navaid added to ./SFO_layer.json
+20210601160934 0 elements of type route segment added to ./SFO_layer.json
+20210601160934 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210601160934 2 elements of type Airspace added to ./SFO_layer.json
+20210601160934 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601160934 72 elements of type Navaid added to ./SFO_layer.json
+20210601160934 0 elements of type route segment added to ./SFO_layer.json
+20210601160934 starting to collect the element to add to the .json for: GVA Lower Chart
+20210601160934 35 elements of type Airspace added to ./SFO_layer.json
+20210601160934 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601160934 72 elements of type Navaid added to ./SFO_layer.json
+20210601160934 starting to collect the element to add to the .json for: GVA Upper Chart
+20210601160934 35 elements of type Airspace added to ./SFO_layer.json
+20210601160934 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601160934 72 elements of type Navaid added to ./SFO_layer.json
+20210601160935 0 elements of type route segment added to ./SFO_layer.json
+20210601160935 starting to collect the element to add to the .json for: TWR APP Chart
+20210601160935 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601160935 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601160935 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601160935 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601160935 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601160935 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601160935 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601160935 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601160935 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601160935 56 elements of type Airspace added to ./SFO_layer.json
+20210601160935 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601160935 72 elements of type Navaid added to ./SFO_layer.json
+20210601160935 10 elements of type RunwayAxis added to ./SFO_layer.json
+20210601160935 data saved in: ./SFO_layer_20210601.json
+
+20210601160935 File Updated
+20210601160935 Done!
+20210601172034 ERROR: No date in the name of:RouteSegment.geojson
+20210601172034 INFO: File used : RouteSegment_20210520.xml in :.
+20210601172034 ERROR: No date in the name of:Airspace.geojson
+20210601172034 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210601172034 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210601172034 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210601172035 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayDirection
+20210601172035 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayCentrelinePoint
+20210601172035 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210601172035 21 elements of type Airspace added to ./SFO_layer.json
+20210601172035 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601172035 72 elements of type Navaid added to ./SFO_layer.json
+20210601172036 0 elements of type route segment added to ./SFO_layer.json
+20210601172036 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210601172036 2 elements of type Airspace added to ./SFO_layer.json
+20210601172036 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601172036 72 elements of type Navaid added to ./SFO_layer.json
+20210601172036 0 elements of type route segment added to ./SFO_layer.json
+20210601172036 starting to collect the element to add to the .json for: GVA Lower Chart
+20210601172036 35 elements of type Airspace added to ./SFO_layer.json
+20210601172036 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601172036 72 elements of type Navaid added to ./SFO_layer.json
+20210601172036 starting to collect the element to add to the .json for: GVA Upper Chart
+20210601172036 35 elements of type Airspace added to ./SFO_layer.json
+20210601172036 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601172036 72 elements of type Navaid added to ./SFO_layer.json
+20210601172036 0 elements of type route segment added to ./SFO_layer.json
+20210601172036 starting to collect the element to add to the .json for: TWR APP Chart
+20210601172036 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172036 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172036 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172036 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172036 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172036 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172036 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172036 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172036 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172036 56 elements of type Airspace added to ./SFO_layer.json
+20210601172036 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601172036 72 elements of type Navaid added to ./SFO_layer.json
+20210601172857 ERROR: No date in the name of:RouteSegment.geojson
+20210601172857 INFO: File used : RouteSegment_20210520.xml in :.
+20210601172857 ERROR: No date in the name of:Airspace.geojson
+20210601172857 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210601172857 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210601172857 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210601172858 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayDirection
+20210601172858 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayCentrelinePoint
+20210601172858 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210601172858 21 elements of type Airspace added to ./SFO_layer.json
+20210601172858 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601172858 72 elements of type Navaid added to ./SFO_layer.json
+20210601172858 0 elements of type route segment added to ./SFO_layer.json
+20210601172858 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210601172858 2 elements of type Airspace added to ./SFO_layer.json
+20210601172858 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601172858 72 elements of type Navaid added to ./SFO_layer.json
+20210601172858 0 elements of type route segment added to ./SFO_layer.json
+20210601172858 starting to collect the element to add to the .json for: GVA Lower Chart
+20210601172858 35 elements of type Airspace added to ./SFO_layer.json
+20210601172858 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601172858 72 elements of type Navaid added to ./SFO_layer.json
+20210601172858 starting to collect the element to add to the .json for: GVA Upper Chart
+20210601172858 35 elements of type Airspace added to ./SFO_layer.json
+20210601172858 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601172858 72 elements of type Navaid added to ./SFO_layer.json
+20210601172858 0 elements of type route segment added to ./SFO_layer.json
+20210601172858 starting to collect the element to add to the .json for: TWR APP Chart
+20210601172858 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172858 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172858 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172858 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172858 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172858 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172858 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172858 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172858 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172858 56 elements of type Airspace added to ./SFO_layer.json
+20210601172858 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601172858 72 elements of type Navaid added to ./SFO_layer.json
+20210601172858 1st rwy ref: LSGG_04
+20210601172858 2nd rwy ref: LSGG_22
+20210601172945 ERROR: No date in the name of:RouteSegment.geojson
+20210601172945 INFO: File used : RouteSegment_20210520.xml in :.
+20210601172945 ERROR: No date in the name of:Airspace.geojson
+20210601172945 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210601172945 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210601172945 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210601172946 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayDirection
+20210601172946 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayCentrelinePoint
+20210601172946 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210601172946 21 elements of type Airspace added to ./SFO_layer.json
+20210601172946 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601172946 72 elements of type Navaid added to ./SFO_layer.json
+20210601172946 0 elements of type route segment added to ./SFO_layer.json
+20210601172946 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210601172946 2 elements of type Airspace added to ./SFO_layer.json
+20210601172946 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601172946 72 elements of type Navaid added to ./SFO_layer.json
+20210601172946 0 elements of type route segment added to ./SFO_layer.json
+20210601172946 starting to collect the element to add to the .json for: GVA Lower Chart
+20210601172946 35 elements of type Airspace added to ./SFO_layer.json
+20210601172946 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601172946 72 elements of type Navaid added to ./SFO_layer.json
+20210601172946 starting to collect the element to add to the .json for: GVA Upper Chart
+20210601172946 35 elements of type Airspace added to ./SFO_layer.json
+20210601172946 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601172946 72 elements of type Navaid added to ./SFO_layer.json
+20210601172946 0 elements of type route segment added to ./SFO_layer.json
+20210601172946 starting to collect the element to add to the .json for: TWR APP Chart
+20210601172946 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172946 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172946 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172946 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172946 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172946 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172946 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172946 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172946 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601172946 56 elements of type Airspace added to ./SFO_layer.json
+20210601172946 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601172946 72 elements of type Navaid added to ./SFO_layer.json
+20210601172946 1st rwy ref: LSGG_04
+20210601172946 2nd rwy ref: LSGG_22
+20210601173350 ERROR: No date in the name of:RouteSegment.geojson
+20210601173350 INFO: File used : RouteSegment_20210520.xml in :.
+20210601173350 ERROR: No date in the name of:Airspace.geojson
+20210601173350 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210601173350 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210601173350 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210601173351 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayDirection
+20210601173351 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayCentrelinePoint
+20210601173351 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210601173351 21 elements of type Airspace added to ./SFO_layer.json
+20210601173351 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601173351 72 elements of type Navaid added to ./SFO_layer.json
+20210601173351 0 elements of type route segment added to ./SFO_layer.json
+20210601173351 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210601173351 2 elements of type Airspace added to ./SFO_layer.json
+20210601173351 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601173351 72 elements of type Navaid added to ./SFO_layer.json
+20210601173351 0 elements of type route segment added to ./SFO_layer.json
+20210601173351 starting to collect the element to add to the .json for: GVA Lower Chart
+20210601173351 35 elements of type Airspace added to ./SFO_layer.json
+20210601173351 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601173351 72 elements of type Navaid added to ./SFO_layer.json
+20210601173351 starting to collect the element to add to the .json for: GVA Upper Chart
+20210601173351 35 elements of type Airspace added to ./SFO_layer.json
+20210601173351 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601173351 72 elements of type Navaid added to ./SFO_layer.json
+20210601173351 0 elements of type route segment added to ./SFO_layer.json
+20210601173351 starting to collect the element to add to the .json for: TWR APP Chart
+20210601173351 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601173351 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601173351 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601173351 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601173351 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601173351 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601173351 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601173351 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601173351 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601173351 56 elements of type Airspace added to ./SFO_layer.json
+20210601173351 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601173351 72 elements of type Navaid added to ./SFO_layer.json
+20210601173351 1st rwy dir: 
+20210601173351 2nd rwy dir: 
+20210601173351 1st rwy ref: LSGG_04
+20210601173351 2nd rwy ref: LSGG_22
+20210601175439 ERROR: No date in the name of:RouteSegment.geojson
+20210601175439 INFO: File used : RouteSegment_20210520.xml in :.
+20210601175439 ERROR: No date in the name of:Airspace.geojson
+20210601175439 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210601175439 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210601175439 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210601175440 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayDirection
+20210601175440 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayCentrelinePoint
+20210601175440 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210601175440 21 elements of type Airspace added to ./SFO_layer.json
+20210601175440 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601175440 72 elements of type Navaid added to ./SFO_layer.json
+20210601175440 0 elements of type route segment added to ./SFO_layer.json
+20210601175440 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210601175440 2 elements of type Airspace added to ./SFO_layer.json
+20210601175440 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601175440 72 elements of type Navaid added to ./SFO_layer.json
+20210601175440 0 elements of type route segment added to ./SFO_layer.json
+20210601175440 starting to collect the element to add to the .json for: GVA Lower Chart
+20210601175440 35 elements of type Airspace added to ./SFO_layer.json
+20210601175441 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601175441 72 elements of type Navaid added to ./SFO_layer.json
+20210601175441 starting to collect the element to add to the .json for: GVA Upper Chart
+20210601175441 35 elements of type Airspace added to ./SFO_layer.json
+20210601175441 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601175441 72 elements of type Navaid added to ./SFO_layer.json
+20210601175441 0 elements of type route segment added to ./SFO_layer.json
+20210601175441 starting to collect the element to add to the .json for: TWR APP Chart
+20210601175441 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175441 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175441 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175441 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175441 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175441 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175441 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175441 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175441 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175441 56 elements of type Airspace added to ./SFO_layer.json
+20210601175441 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601175441 72 elements of type Navaid added to ./SFO_layer.json
+20210601175441 1st rwy dir: 
+20210601175441 2nd rwy dir: 
+20210601175441 1st rwy ref: LSGG_04
+20210601175441 2nd rwy ref: LSGG_22
+20210601175553 ERROR: No date in the name of:RouteSegment.geojson
+20210601175553 INFO: File used : RouteSegment_20210520.xml in :.
+20210601175553 ERROR: No date in the name of:Airspace.geojson
+20210601175553 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210601175553 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210601175553 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210601175554 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayDirection
+20210601175554 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayCentrelinePoint
+20210601175554 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210601175555 21 elements of type Airspace added to ./SFO_layer.json
+20210601175555 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601175555 72 elements of type Navaid added to ./SFO_layer.json
+20210601175555 0 elements of type route segment added to ./SFO_layer.json
+20210601175555 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210601175555 2 elements of type Airspace added to ./SFO_layer.json
+20210601175555 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601175555 72 elements of type Navaid added to ./SFO_layer.json
+20210601175555 0 elements of type route segment added to ./SFO_layer.json
+20210601175555 starting to collect the element to add to the .json for: GVA Lower Chart
+20210601175555 35 elements of type Airspace added to ./SFO_layer.json
+20210601175555 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601175555 72 elements of type Navaid added to ./SFO_layer.json
+20210601175555 starting to collect the element to add to the .json for: GVA Upper Chart
+20210601175555 35 elements of type Airspace added to ./SFO_layer.json
+20210601175555 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601175555 72 elements of type Navaid added to ./SFO_layer.json
+20210601175555 0 elements of type route segment added to ./SFO_layer.json
+20210601175555 starting to collect the element to add to the .json for: TWR APP Chart
+20210601175555 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175555 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175555 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175555 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175555 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175555 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175555 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175555 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175555 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175555 56 elements of type Airspace added to ./SFO_layer.json
+20210601175555 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601175555 72 elements of type Navaid added to ./SFO_layer.json
+20210601175616 ERROR: No date in the name of:RouteSegment.geojson
+20210601175616 INFO: File used : RouteSegment_20210520.xml in :.
+20210601175616 ERROR: No date in the name of:Airspace.geojson
+20210601175616 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210601175616 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210601175616 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210601175617 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayDirection
+20210601175618 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayCentrelinePoint
+20210601175618 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210601175618 21 elements of type Airspace added to ./SFO_layer.json
+20210601175618 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601175618 72 elements of type Navaid added to ./SFO_layer.json
+20210601175618 0 elements of type route segment added to ./SFO_layer.json
+20210601175618 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210601175618 2 elements of type Airspace added to ./SFO_layer.json
+20210601175618 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601175618 72 elements of type Navaid added to ./SFO_layer.json
+20210601175618 0 elements of type route segment added to ./SFO_layer.json
+20210601175618 starting to collect the element to add to the .json for: GVA Lower Chart
+20210601175618 35 elements of type Airspace added to ./SFO_layer.json
+20210601175618 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601175618 72 elements of type Navaid added to ./SFO_layer.json
+20210601175618 starting to collect the element to add to the .json for: GVA Upper Chart
+20210601175618 35 elements of type Airspace added to ./SFO_layer.json
+20210601175618 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601175618 72 elements of type Navaid added to ./SFO_layer.json
+20210601175618 0 elements of type route segment added to ./SFO_layer.json
+20210601175618 starting to collect the element to add to the .json for: TWR APP Chart
+20210601175618 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175618 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175618 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175618 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175618 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175618 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175618 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175618 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175618 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210601175618 56 elements of type Airspace added to ./SFO_layer.json
+20210601175618 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210601175618 72 elements of type Navaid added to ./SFO_layer.json
+20210601175618 1st rwy dir: 
+20210601175618 2nd rwy dir: 
+20210601175618 1st rwy ref: LSGG_04
+20210601175618 2nd rwy ref: LSGG_22

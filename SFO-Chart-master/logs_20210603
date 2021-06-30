@@ -1,0 +1,483 @@
+20210603101411 ERROR: No date in the name of:RouteSegment.geojson
+20210603101411 INFO: File used : RouteSegment_20210520.xml in :.
+20210603101411 ERROR: No date in the name of:Airspace.geojson
+20210603101411 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210603101411 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210603101411 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210603101412 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayDirection
+20210603101412 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayCentrelinePoint
+20210603101412 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210603101412 21 elements of type Airspace added to ./SFO_layer.json
+20210603101412 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603101412 72 elements of type Navaid added to ./SFO_layer.json
+20210603101412 0 elements of type route segment added to ./SFO_layer.json
+20210603101412 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210603101412 2 elements of type Airspace added to ./SFO_layer.json
+20210603101412 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603101412 72 elements of type Navaid added to ./SFO_layer.json
+20210603101412 0 elements of type route segment added to ./SFO_layer.json
+20210603101412 starting to collect the element to add to the .json for: GVA Lower Chart
+20210603101412 35 elements of type Airspace added to ./SFO_layer.json
+20210603101412 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603101412 72 elements of type Navaid added to ./SFO_layer.json
+20210603101412 starting to collect the element to add to the .json for: GVA Upper Chart
+20210603101412 35 elements of type Airspace added to ./SFO_layer.json
+20210603101412 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603101412 72 elements of type Navaid added to ./SFO_layer.json
+20210603101412 0 elements of type route segment added to ./SFO_layer.json
+20210603101412 starting to collect the element to add to the .json for: TWR APP Chart
+20210603101412 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101412 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101412 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101412 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101412 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101412 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101412 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101412 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101412 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101412 56 elements of type Airspace added to ./SFO_layer.json
+20210603101412 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603101412 72 elements of type Navaid added to ./SFO_layer.json
+20210603101412 1st rwy ref: 04 LSGG
+20210603101412 1st rwy dir: 
+20210603101412 2nd rwy ref: 22 LSGG
+20210603101412 2nd rwy dir: 
+20210603101844 ERROR: No date in the name of:RouteSegment.geojson
+20210603101844 INFO: File used : RouteSegment_20210520.xml in :.
+20210603101844 ERROR: No date in the name of:Airspace.geojson
+20210603101844 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210603101844 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210603101844 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210603101846 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayDirection
+20210603101846 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayCentrelinePoint
+20210603101846 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210603101846 21 elements of type Airspace added to ./SFO_layer.json
+20210603101846 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603101846 72 elements of type Navaid added to ./SFO_layer.json
+20210603101846 0 elements of type route segment added to ./SFO_layer.json
+20210603101846 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210603101846 2 elements of type Airspace added to ./SFO_layer.json
+20210603101846 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603101846 72 elements of type Navaid added to ./SFO_layer.json
+20210603101846 0 elements of type route segment added to ./SFO_layer.json
+20210603101846 starting to collect the element to add to the .json for: GVA Lower Chart
+20210603101846 35 elements of type Airspace added to ./SFO_layer.json
+20210603101846 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603101846 72 elements of type Navaid added to ./SFO_layer.json
+20210603101846 starting to collect the element to add to the .json for: GVA Upper Chart
+20210603101846 35 elements of type Airspace added to ./SFO_layer.json
+20210603101846 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603101846 72 elements of type Navaid added to ./SFO_layer.json
+20210603101846 0 elements of type route segment added to ./SFO_layer.json
+20210603101846 starting to collect the element to add to the .json for: TWR APP Chart
+20210603101846 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101846 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101846 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101846 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101846 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101846 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101846 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101846 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101846 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101846 56 elements of type Airspace added to ./SFO_layer.json
+20210603101846 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603101846 72 elements of type Navaid added to ./SFO_layer.json
+20210603101846 1st rwy ref: 04 LSGG
+20210603101846 1st rwy dir: 
+20210603101846 2nd rwy ref: 22 LSGG
+20210603101846 2nd rwy dir: 
+20210603101913 ERROR: No date in the name of:RouteSegment.geojson
+20210603101913 INFO: File used : RouteSegment_20210520.xml in :.
+20210603101913 ERROR: No date in the name of:Airspace.geojson
+20210603101913 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210603101913 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210603101913 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210603101914 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayDirection
+20210603101914 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayCentrelinePoint
+20210603101914 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210603101914 21 elements of type Airspace added to ./SFO_layer.json
+20210603101914 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603101914 72 elements of type Navaid added to ./SFO_layer.json
+20210603101914 0 elements of type route segment added to ./SFO_layer.json
+20210603101914 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210603101914 2 elements of type Airspace added to ./SFO_layer.json
+20210603101914 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603101914 72 elements of type Navaid added to ./SFO_layer.json
+20210603101914 0 elements of type route segment added to ./SFO_layer.json
+20210603101914 starting to collect the element to add to the .json for: GVA Lower Chart
+20210603101914 35 elements of type Airspace added to ./SFO_layer.json
+20210603101914 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603101914 72 elements of type Navaid added to ./SFO_layer.json
+20210603101914 starting to collect the element to add to the .json for: GVA Upper Chart
+20210603101914 35 elements of type Airspace added to ./SFO_layer.json
+20210603101914 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603101914 72 elements of type Navaid added to ./SFO_layer.json
+20210603101915 0 elements of type route segment added to ./SFO_layer.json
+20210603101915 starting to collect the element to add to the .json for: TWR APP Chart
+20210603101915 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101915 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101915 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101915 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101915 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101915 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101915 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101915 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101915 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603101915 56 elements of type Airspace added to ./SFO_layer.json
+20210603101915 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603101915 72 elements of type Navaid added to ./SFO_layer.json
+20210603101915 1st rwy ref: 04 LSGG
+20210603101915 1st rwy dir: 
+20210603101915 2nd rwy ref: 22 LSGG
+20210603101915 2nd rwy dir: 
+20210603102011 ERROR: No date in the name of:RouteSegment.geojson
+20210603102011 INFO: File used : RouteSegment_20210520.xml in :.
+20210603102011 ERROR: No date in the name of:Airspace.geojson
+20210603102011 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210603102011 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210603102011 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210603102012 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayDirection
+20210603102012 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayCentrelinePoint
+20210603102012 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210603102012 21 elements of type Airspace added to ./SFO_layer.json
+20210603102012 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102012 72 elements of type Navaid added to ./SFO_layer.json
+20210603102012 0 elements of type route segment added to ./SFO_layer.json
+20210603102012 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210603102012 2 elements of type Airspace added to ./SFO_layer.json
+20210603102013 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102013 72 elements of type Navaid added to ./SFO_layer.json
+20210603102013 0 elements of type route segment added to ./SFO_layer.json
+20210603102013 starting to collect the element to add to the .json for: GVA Lower Chart
+20210603102013 35 elements of type Airspace added to ./SFO_layer.json
+20210603102013 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102013 72 elements of type Navaid added to ./SFO_layer.json
+20210603102013 starting to collect the element to add to the .json for: GVA Upper Chart
+20210603102013 35 elements of type Airspace added to ./SFO_layer.json
+20210603102013 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102013 72 elements of type Navaid added to ./SFO_layer.json
+20210603102013 0 elements of type route segment added to ./SFO_layer.json
+20210603102013 starting to collect the element to add to the .json for: TWR APP Chart
+20210603102013 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102013 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102013 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102013 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102013 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102013 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102013 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102013 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102013 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102013 56 elements of type Airspace added to ./SFO_layer.json
+20210603102013 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102013 72 elements of type Navaid added to ./SFO_layer.json
+20210603102013 1st rwy ref: 04 LSGG
+20210603102013 1st rwy dir: 
+20210603102013 2nd rwy ref: 22 LSGG
+20210603102013 2nd rwy dir: 
+20210603102027 ERROR: No date in the name of:RouteSegment.geojson
+20210603102027 INFO: File used : RouteSegment_20210520.xml in :.
+20210603102027 ERROR: No date in the name of:Airspace.geojson
+20210603102027 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210603102027 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210603102027 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210603102029 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayDirection
+20210603102029 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayCentrelinePoint
+20210603102029 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210603102029 21 elements of type Airspace added to ./SFO_layer.json
+20210603102029 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102029 72 elements of type Navaid added to ./SFO_layer.json
+20210603102029 0 elements of type route segment added to ./SFO_layer.json
+20210603102029 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210603102029 2 elements of type Airspace added to ./SFO_layer.json
+20210603102029 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102029 72 elements of type Navaid added to ./SFO_layer.json
+20210603102029 0 elements of type route segment added to ./SFO_layer.json
+20210603102029 starting to collect the element to add to the .json for: GVA Lower Chart
+20210603102029 35 elements of type Airspace added to ./SFO_layer.json
+20210603102029 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102029 72 elements of type Navaid added to ./SFO_layer.json
+20210603102029 starting to collect the element to add to the .json for: GVA Upper Chart
+20210603102029 35 elements of type Airspace added to ./SFO_layer.json
+20210603102029 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102029 72 elements of type Navaid added to ./SFO_layer.json
+20210603102029 0 elements of type route segment added to ./SFO_layer.json
+20210603102029 starting to collect the element to add to the .json for: TWR APP Chart
+20210603102029 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102029 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102029 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102029 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102029 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102029 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102029 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102029 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102029 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102029 56 elements of type Airspace added to ./SFO_layer.json
+20210603102029 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102029 72 elements of type Navaid added to ./SFO_layer.json
+20210603102029 1st rwy ref: 04 LSGG
+20210603102029 done
+20210603102029 1st rwy dir: 
+20210603102029 2nd rwy ref: 22 LSGG
+20210603102029 done
+20210603102029 2nd rwy dir: 
+20210603102100 ERROR: No date in the name of:RouteSegment.geojson
+20210603102100 INFO: File used : RouteSegment_20210520.xml in :.
+20210603102100 ERROR: No date in the name of:Airspace.geojson
+20210603102100 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210603102100 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210603102100 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210603102101 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayDirection
+20210603102101 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayCentrelinePoint
+20210603102101 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210603102101 21 elements of type Airspace added to ./SFO_layer.json
+20210603102101 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102101 72 elements of type Navaid added to ./SFO_layer.json
+20210603102101 0 elements of type route segment added to ./SFO_layer.json
+20210603102101 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210603102101 2 elements of type Airspace added to ./SFO_layer.json
+20210603102101 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102101 72 elements of type Navaid added to ./SFO_layer.json
+20210603102101 0 elements of type route segment added to ./SFO_layer.json
+20210603102101 starting to collect the element to add to the .json for: GVA Lower Chart
+20210603102101 35 elements of type Airspace added to ./SFO_layer.json
+20210603102101 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102101 72 elements of type Navaid added to ./SFO_layer.json
+20210603102101 starting to collect the element to add to the .json for: GVA Upper Chart
+20210603102102 35 elements of type Airspace added to ./SFO_layer.json
+20210603102102 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102102 72 elements of type Navaid added to ./SFO_layer.json
+20210603102102 0 elements of type route segment added to ./SFO_layer.json
+20210603102102 starting to collect the element to add to the .json for: TWR APP Chart
+20210603102102 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102102 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102102 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102102 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102102 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102102 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102102 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102102 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102102 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102102 56 elements of type Airspace added to ./SFO_layer.json
+20210603102102 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102102 72 elements of type Navaid added to ./SFO_layer.json
+20210603102102 1st rwy ref: 04 LSGG
+20210603102102 1st rwy dir: 
+20210603102102 2nd rwy ref: 22 LSGG
+20210603102102 2nd rwy dir: 
+20210603102922 ERROR: No date in the name of:RouteSegment.geojson
+20210603102922 INFO: File used : RouteSegment_20210520.xml in :.
+20210603102922 ERROR: No date in the name of:Airspace.geojson
+20210603102922 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210603102922 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210603102922 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210603102924 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayDirection
+20210603102924 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayCentrelinePoint
+20210603102924 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210603102924 21 elements of type Airspace added to ./SFO_layer.json
+20210603102924 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102924 72 elements of type Navaid added to ./SFO_layer.json
+20210603102924 0 elements of type route segment added to ./SFO_layer.json
+20210603102924 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210603102924 2 elements of type Airspace added to ./SFO_layer.json
+20210603102924 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102924 72 elements of type Navaid added to ./SFO_layer.json
+20210603102924 0 elements of type route segment added to ./SFO_layer.json
+20210603102924 starting to collect the element to add to the .json for: GVA Lower Chart
+20210603102924 35 elements of type Airspace added to ./SFO_layer.json
+20210603102924 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102924 72 elements of type Navaid added to ./SFO_layer.json
+20210603102924 starting to collect the element to add to the .json for: GVA Upper Chart
+20210603102924 35 elements of type Airspace added to ./SFO_layer.json
+20210603102924 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102924 72 elements of type Navaid added to ./SFO_layer.json
+20210603102924 0 elements of type route segment added to ./SFO_layer.json
+20210603102924 starting to collect the element to add to the .json for: TWR APP Chart
+20210603102924 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102924 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102924 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102924 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102924 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102924 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102924 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102924 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102924 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603102924 56 elements of type Airspace added to ./SFO_layer.json
+20210603102924 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603102924 72 elements of type Navaid added to ./SFO_layer.json
+20210603102924 1st rwy ref: 04 LSGG
+20210603102924 1st rwy dir: 
+20210603102924 2nd rwy ref: 22 LSGG
+20210603102924 2nd rwy dir: 
+20210603103616 ERROR: No date in the name of:RouteSegment.geojson
+20210603103616 INFO: File used : RouteSegment_20210520.xml in :.
+20210603103616 ERROR: No date in the name of:Airspace.geojson
+20210603103616 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210603103616 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210603103616 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210603103617 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayDirection
+20210603103617 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayCentrelinePoint
+20210603103617 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210603103617 21 elements of type Airspace added to ./SFO_layer.json
+20210603103617 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603103617 72 elements of type Navaid added to ./SFO_layer.json
+20210603103617 0 elements of type route segment added to ./SFO_layer.json
+20210603103753 ERROR: No date in the name of:RouteSegment.geojson
+20210603103753 INFO: File used : RouteSegment_20210520.xml in :.
+20210603103753 ERROR: No date in the name of:Airspace.geojson
+20210603103753 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210603103753 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210603103753 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210603103755 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayDirection
+20210603103755 there is no Element  with the tag aixm-message:hasMember/aixm:RunwayCentrelinePoint
+20210603103755 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210603103755 21 elements of type Airspace added to ./SFO_layer.json
+20210603103755 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603103755 72 elements of type Navaid added to ./SFO_layer.json
+20210603103755 0 elements of type route segment added to ./SFO_layer.json
+20210603103755 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210603103755 2 elements of type Airspace added to ./SFO_layer.json
+20210603103755 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603103755 72 elements of type Navaid added to ./SFO_layer.json
+20210603103755 0 elements of type route segment added to ./SFO_layer.json
+20210603103755 starting to collect the element to add to the .json for: GVA Lower Chart
+20210603103755 35 elements of type Airspace added to ./SFO_layer.json
+20210603103755 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603103755 72 elements of type Navaid added to ./SFO_layer.json
+20210603103755 starting to collect the element to add to the .json for: GVA Upper Chart
+20210603103755 35 elements of type Airspace added to ./SFO_layer.json
+20210603103755 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603103755 72 elements of type Navaid added to ./SFO_layer.json
+20210603103755 0 elements of type route segment added to ./SFO_layer.json
+20210603103755 starting to collect the element to add to the .json for: TWR APP Chart
+20210603103755 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603103755 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603103755 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603103755 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603103755 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603103755 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603103755 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603103755 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603103755 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603103755 56 elements of type Airspace added to ./SFO_layer.json
+20210603103755 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603103755 72 elements of type Navaid added to ./SFO_layer.json
+20210603103755 1st rwy ref: 04 LSGG
+20210603103755 1st rwy dir: 
+20210603103755 2nd rwy ref: 22 LSGG
+20210603103755 2nd rwy dir: 
+20210603111549 ERROR: No date in the name of:RouteSegment.geojson
+20210603111549 INFO: File used : RouteSegment_20210520.xml in :.
+20210603111549 ERROR: No date in the name of:Airspace.geojson
+20210603111549 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210603111549 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210603111549 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210603111550 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210603111550 21 elements of type Airspace added to ./SFO_layer.json
+20210603111550 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603111550 72 elements of type Navaid added to ./SFO_layer.json
+20210603111550 0 elements of type route segment added to ./SFO_layer.json
+20210603111550 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210603111550 2 elements of type Airspace added to ./SFO_layer.json
+20210603111550 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603111550 72 elements of type Navaid added to ./SFO_layer.json
+20210603111550 0 elements of type route segment added to ./SFO_layer.json
+20210603111550 starting to collect the element to add to the .json for: GVA Lower Chart
+20210603111551 35 elements of type Airspace added to ./SFO_layer.json
+20210603111551 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603111551 72 elements of type Navaid added to ./SFO_layer.json
+20210603111551 starting to collect the element to add to the .json for: GVA Upper Chart
+20210603111551 35 elements of type Airspace added to ./SFO_layer.json
+20210603111551 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603111551 72 elements of type Navaid added to ./SFO_layer.json
+20210603111551 0 elements of type route segment added to ./SFO_layer.json
+20210603111551 starting to collect the element to add to the .json for: TWR APP Chart
+20210603111551 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603111551 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603111551 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603111551 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603111551 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603111551 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603111551 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603111551 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603111551 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603111551 56 elements of type Airspace added to ./SFO_layer.json
+20210603111551 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603111551 72 elements of type Navaid added to ./SFO_layer.json
+20210603111551 1st rwy ref: 04 LSGG
+20210603111551 1st rwy dir: 2c3eacca-bc48-498c-8242-df1c9576d0b8
+20210603111551 2nd rwy ref: 22 LSGG
+20210603111551 2nd rwy dir: 0393f2de-04f0-41d3-a849-2b04d626a06c
+20210603111551 1st point: 6.093955556 46.227842778
+20210603111551 3rd point: 6.127005278 46.250360556
+20210603111551 1st rwy ref: 10 LSZH
+20210603111551 1st rwy dir: b8ab7bde-ac7f-4213-b3f2-653ee77ced87
+20210603111551 2nd rwy ref: 28 LSZH
+20210603111551 2nd rwy dir: a7ef4148-a1af-48be-ab81-7e2d286ac83a
+20210603111551 1st point: 8.537479194 47.458938806
+20210603111551 3rd point: 8.570452639 47.45659875
+20210603111551 1st rwy ref: 16 LSZH
+20210603111551 1st rwy dir: 14c4d5a2-bdd7-4e7c-9592-f1de518d7fd2
+20210603111551 2nd rwy ref: 34 LSZH
+20210603111551 2nd rwy dir: 400745ea-45d6-4baa-afe9-abe8553477ba
+20210603111551 1st point: 8.535937 47.475713389
+20210603111551 3rd point: 8.554142917 47.449275889
+20210603111551 1st rwy ref: 14 LSZH
+20210603111551 1st rwy dir: 3b09724e-b9b7-45a5-ba0a-978c4f2e4289
+20210603111551 2nd rwy ref: 32 LSZH
+20210603111551 2nd rwy dir: 36daa869-0384-40c9-9e64-f61da5b94f4c
+20210603111551 1st point: 8.5360745 47.482091861
+20210603111551 3rd point: 8.564460972 47.461291056
+20210603111551 1st rwy ref: 11 LSMD
+20210603111551 1st rwy dir: f6fff37e-4aea-45d7-925a-f2c7acd4bd62
+20210603111551 2nd rwy ref: 29 LSMD
+20210603111551 2nd rwy dir: 1c7539e2-0d51-433f-8edb-9d9914608295
+20210603111551 1st point: 8.6337222222 47.4016222222
+20210603111551 3rd point: 8.6627333333 47.3953055556
+20210603111551 10 elements of type RunwayAxis added to ./SFO_layer.json
+20210603111551 data saved in: ./SFO_layer_20210603.json
+
+20210603111551 File Updated
+20210603111551 Done!
+20210603111734 ERROR: No date in the name of:RouteSegment.geojson
+20210603111734 INFO: File used : RouteSegment_20210520.xml in :.
+20210603111734 ERROR: No date in the name of:Airspace.geojson
+20210603111734 INFO: File used : Airspace_NoRefGeoborder_20210520.xml in :.
+20210603111734 INFO: File used : DesignatedPoint_Navaid_20210520.xml in :.
+20210603111734 INFO: File used : RunwayCentrePoint_20210520.xml in :.
+20210603111735 starting to collect the element to add to the .json for: ZRH Lower Chart
+20210603111735 21 elements of type Airspace added to ./SFO_layer.json
+20210603111735 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603111735 72 elements of type Navaid added to ./SFO_layer.json
+20210603111735 0 elements of type route segment added to ./SFO_layer.json
+20210603111735 starting to collect the element to add to the .json for: ZRH Upper Chart
+20210603111735 2 elements of type Airspace added to ./SFO_layer.json
+20210603111735 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603111735 72 elements of type Navaid added to ./SFO_layer.json
+20210603111736 0 elements of type route segment added to ./SFO_layer.json
+20210603111736 starting to collect the element to add to the .json for: GVA Lower Chart
+20210603111736 35 elements of type Airspace added to ./SFO_layer.json
+20210603111736 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603111736 72 elements of type Navaid added to ./SFO_layer.json
+20210603111736 starting to collect the element to add to the .json for: GVA Upper Chart
+20210603111736 35 elements of type Airspace added to ./SFO_layer.json
+20210603111736 835 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603111736 72 elements of type Navaid added to ./SFO_layer.json
+20210603111736 0 elements of type route segment added to ./SFO_layer.json
+20210603111736 starting to collect the element to add to the .json for: TWR APP Chart
+20210603111736 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603111736 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603111736 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603111736 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603111736 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603111736 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603111736 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603111736 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603111736 there is no Element  with the tag aixm:activation/aixm:AirspaceActivation
+20210603111736 56 elements of type Airspace added to ./SFO_layer.json
+20210603111736 1226 elements of type DesignatedPoint added to ./SFO_layer.json
+20210603111736 72 elements of type Navaid added to ./SFO_layer.json
+20210603111736 10 elements of type RunwayAxis added to ./SFO_layer.json
+20210603111736 data saved in: ./SFO_layer_20210603.json
+
+20210603111736 File Updated
+20210603111736 Done!
